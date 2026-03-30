@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegador/core/app_theme.dart';
 import 'package:navegador/core/routing.dart';
 
 void main() {
@@ -13,8 +14,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Login App',
       routerConfig: appRouter,
+      theme: AppTheme.lightTheme(),
       debugShowCheckedModeBanner: false,
     );
   }
-
 }
