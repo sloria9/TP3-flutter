@@ -12,7 +12,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  //dispose() es un método que se usa para limpiar recursos cuando una pantalla deja de existir
+  //dispose() metodo que se usa para limpiar recursos cuando una pantalla deja de existir
   @override
   void dispose() {
     _usernameController.dispose();
@@ -57,6 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   _passwordController.clear();
 
                   //extra se usa para pasar info
+                  //ademas de navegar, llevate este dato
                 context.push('/home', extra: username);
               },
               child: const Text('Login'),

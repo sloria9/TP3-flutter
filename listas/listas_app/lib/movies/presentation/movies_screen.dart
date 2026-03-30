@@ -6,7 +6,7 @@ class MoviesScreen extends StatelessWidget {
   MoviesScreen({super.key});
 
   final movieRepository = MoviesRepository();
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
